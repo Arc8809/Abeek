@@ -1,3 +1,8 @@
+
+/**
+ * 
+ * For later uses
+ */
 const mql = window.matchMedia("(max-width: 800px)");
 const mql2 = window.matchMedia("(min-width: 801px)");
 
@@ -37,5 +42,6 @@ mql2.onchange = (e) => {
     }
   }
 };
+
 
 
