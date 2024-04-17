@@ -8,6 +8,8 @@ header {
   background-color: #c1c1de;
 }
 
+
+
 .container {
   position: fixed;
   top: 0;
@@ -120,6 +122,8 @@ nav ul li ul li a:hover {
 
 /* Middle Content Styles */
 .middle-header {
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
   top: 100px;
 }
@@ -128,7 +132,7 @@ nav ul li ul li a:hover {
   top: 90px;
   text-align: center;
   margin-top: 50px;
-  width: 700px;
+  width: 100%;
   margin: auto;
 }
 
@@ -224,6 +228,8 @@ nav ul li ul li a:hover {
 
 /* Main Container */
 /* Course-Section Container */
+
+
 .course-section {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -232,14 +238,18 @@ nav ul li ul li a:hover {
 .course-section .explore {
   font-size: 30px;
   color: #23447e;
-  margin-left: 210px;
+  margin-left: 15%;
   margin-top: 10px;
+  flex-grow: 1;
 }
 .course-collection {
   display: flex;
+  
   justify-content: space-around;
+  row-gap: 5em;
   margin-top: 10px;
   padding: 50px;
+  flex-wrap: wrap;
 }
 
 .course {
@@ -283,15 +293,23 @@ nav ul li ul li a:hover {
 }
 
 .course1 {
+  min-width: 20em;
+  min-height: 20em;
+  
   background-image: url("./images/beginners-image.jpg");
 }
 
 .course2 {
+  min-width: 20em;
+  min-height: 20em;
   background-image: url("./images/advanced-unix.jpg");
 }
 
 /* Testimonial Section */
 .testimonial-section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   margin-top: 70px;
   background-color: #c1c1de;
   padding: 15px;
@@ -300,7 +318,7 @@ nav ul li ul li a:hover {
 .testimonial-section h2 {
   font-size: 30px;
   color: #23447e;
-  margin-left: 210px;
+  margin-left: 10%;
   margin-top: 10px;
   margin-bottom: 60px;
 }
@@ -310,11 +328,13 @@ nav ul li ul li a:hover {
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 40px;
-  margin-left: 180px;
+  margin-left: 10%;
 }
 
 .testimonial img {
-  width: 200px;
+  width: 10%;
+  min-height: 100px;
+  min-width: 200px;
   border-radius: 10%; /* Make the image round */
 }
 
@@ -329,5 +349,5 @@ nav ul li ul li a:hover {
 
 .testimonial-info p {
   font-size: 14px;
-  width: 500px;
+  width: 100%;
 }
