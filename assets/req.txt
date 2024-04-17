@@ -1,0 +1,11 @@
+Color Guides:
+
+Primary Color: #63A8F2;
+Secondary Color: #658C94;
+Accent Color: #6476A0;
+Alternative Color: #23447E;
+
+Typography:
+Main font: Roboto
+Alternates: Helvetica
+

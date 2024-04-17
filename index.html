@@ -1,23 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unix Tutorial</title>
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/images/ABEEK_logo.webp" type="image/png" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/images/ABEEK_logo.webp" alt="ABEEK Logo" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a href="#" id="nav-link">UNIX Basics</a>
+              <ul class="submenu">
+                <li><a href="#">Intro to Unix</a></li>
+                <li><a href="#">Unix File System</a></li>
+                <li><a href="#">Command Line Basics</a></li>
+                <li><a href="#">File Management</a></li>
+                <li><a href="#">Text Editing</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" id="nav-link">Advanced UNIX</a>
+              <ul class="submenu">
+                <li><a href="#">Shell scripting</a></li>
+                <li><a href="#">Process management</a></li>
+                <li><a href="#">Networking</a></li>
+                <li><a href="#">System Administration</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" id="nav-link">Examples</a>
+              <ul class="submenu">
+                <li><a href="#">Code Snippets</a></li>
+                <li><a href="#">Interactive Examples</a></li>
+              </ul>
+            </li>
+            <!-- Add other menu items here -->
+            <li class="dropdown">
+              <a href="#" id="nav-link">More</a>
+              <ul class="submenu">
+                <li><a href="#">Exercises</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="#">Certifications</a></li>
+                <li><a href="#">About ABEEK</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="search">
+          <!-- <input type="text" placeholder="Search" />
+          <button type="submit">Search</button> -->
+            <!-- <div class="mode-toggle">
+                <img
+                src="assets/images/moon.png"
+                alt="Dark Mode/Light Mode Toggle"
+                /> -->
+          </div>
+        </div>
+      </div>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="assets/styles/style.css">
-    <title>Abeek Homepage/title>
-</head>
+      <!-- Middle Content -->
+      <div class="middle-header">
+        <div class="middle-content">
+          <p>
+            We are <span class="highlight">ABEEK Tutorials</span>, your ultimate
+            destination for transforming from a UNIX novice to a seasoned pro.
+          </p>
+          <button>Start Learning Now</button>
+          <div class="search-container">
+            <input type="text" placeholder="What do you want to learn?" id="searchInput" />
+            <button>Search</button>
+          </div>
+        </div>
+        <img
+          src="assets/images/1.png"
+          alt="Unordered Small Shape"
+          class="line-shape1"
+        />
+        <img
+          src="assets/images/2.png"
+          alt="Unordered Small Shape"
+          class="line-shape2"
+        />
+      </div>
+    </header>
 
-<body>
-  <nav>
-  
-  </nav>
-<main>
-  
-</main>
+    <main>
+        <div class="course-section">
+            <h2 class="explore">Explore Our <br>Two Main Courses</h2>
 
-  <footer>
-    
-  </footer>
-</body>
+        <div class="course-collection">
+            <div class="course course1">
+              <div class="course-info">
+                <h2>Unix for Beginners</h2>
+                <p>Get started with Unix fundamentals and build a solid foundation.</p>
+              </div>
+            </div>
+            
+            <div class="course course2">
+              <div class="course-info">
+                <h2>Advanced Unix</h2>
+                <p>Dive deeper into Unix concepts and enhance your skills.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-section">
+            <h2>What Our Students Say</h2>
+            <div class="testimonial">
+              <img src="assets/images/john-doe.webp" alt="Student 1" />
+              <div class="testimonial-info">
+                <h3>John Doe</h3>
+                <p>This website has been invaluable in my journey to becoming a UNIX expert. The tutorials are clear and concise, and the interactive examples helped solidify my understanding. I'm grateful for the knowledge I've gained here.</p>
+              </div>
+            </div>
+            <div class="testimonial">
+              <img src="assets/images/jane-smith.avif" alt="Student 2" />
+              <div class="testimonial-info">
+                <h3>Jane Smith</h3>
+                <p>As someone new to UNIX, I found this website incredibly helpful. The explanations are easy to follow, and the exercises provided challenged me in all the right ways. Thanks to this platform, I now feel confident in my UNIX skills.</p>
+              </div>
+            </div>
+            <div class="testimonial">
+                <img src="assets/images/emily-johnson.avif" alt="Student 3" />
+                <div class="testimonial-info">
+                  <h3>Emily Johnson</h3>
+                  <p>Discovering this website was a game-changer for me. As someone transitioning into a career in tech, the UNIX tutorials provided here have been invaluable. I've gained confidence in my skills and feel better prepared for the challenges ahead.</p>
+                </div>
+            </div>          
+        </div>
+          
+    </main>
+
+    <footer>
+      <!-- Your footer content goes here -->
+    </footer>
+  </body>
 </html>
