@@ -319,6 +319,7 @@ nav ul li ul li a:hover {
   margin-top: 70px;
   background-color: #c1c1de;
   padding: 15px;
+  
 }
 
 .testimonial-section h2 {
@@ -346,6 +347,7 @@ nav ul li ul li a:hover {
 
 .testimonial-info {
   margin-left: 20px; /* Add margin for spacing between image and text */
+  flex: 0 0 40%;
 }
 
 .testimonial-info h3 {
