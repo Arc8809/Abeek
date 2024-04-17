@@ -127,6 +127,7 @@ nav ul li ul li a:hover {
   flex-wrap: wrap;
   position: relative;
   top: 100px;
+  
 }
 .middle-content {
   position: relative;
@@ -135,6 +136,7 @@ nav ul li ul li a:hover {
   margin-top: 50px;
   width: 100%;
   margin: auto;
+  z-index: 100;
 }
 
 .middle-content p {
@@ -214,17 +216,20 @@ nav ul li ul li a:hover {
 }
 
 .line-shape1 {
-  position: absolute;
+  
   width: 300px;
   left: 0;
   top: 200px;
+  
 }
 
 .line-shape2 {
   position: absolute;
   width: 300px;
   right: 0;
-  top: 100px;
+  top: 120px;
+  z-index: 0;
+  
 }
 
 /* Main Container */
