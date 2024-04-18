@@ -17,8 +17,6 @@ header {
   background-color: #c1c1de;
 }
 
-
-
 .container {
   position: fixed;
   top: 0;
@@ -34,6 +32,10 @@ header {
 
 .logo img {
   height: 100px;
+}
+
+#home:hover {
+  color: rgb(99, 8, 255);
 }
 
 nav ul {
@@ -56,13 +58,20 @@ nav ul li a {
   position: relative;
 }
 
-#nav-link::after {
+.nav-link::after {
   content: "˅"; /* Unicode character for down arrow */
   margin-left: 5px;
 }
 
+.nav-link:hover {
+  color: rgb(99, 8, 255);
+}
+
+
+
 nav ul li:hover > ul {
   display: block;
+  
 }
 
 nav ul li ul {
