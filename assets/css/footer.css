@@ -1,0 +1,64 @@
+footer {
+  background-color: #6476a0;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 16%;
+  margin: 10px;
+}
+
+.logo-section img {
+  width: 100px;
+  cursor: pointer;
+  position: relative;
+  left: 10px;
+}
+
+.logo-section p {
+  font-size: 12px;
+  position: relative;
+  left: 10px;
+}
+
+.submenu-section h3 {
+  color: #fff;
+}
+
+.submenu {
+  list-style-type: none;
+  padding: 0;
+}
+
+.submenu li {
+  margin-bottom: 5px;
+}
+
+.submenu li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.submenu li a:hover {
+  color: #ccc;
+}
+
+.scroll-to-top {
+  text-align: center;
+}
+
+.scroll-to-top a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.scroll-to-top a:hover {
+  color: #ccc;
+}
