@@ -10,8 +10,6 @@
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/about-us.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/contact-us.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/quizzes.css" />
-    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/content.css" />
-
 
     <?php
           include("/home/iste240t97/Sites/dbconn.php");    
