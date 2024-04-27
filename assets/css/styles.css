@@ -178,6 +178,18 @@ header {
   transition: transform 0.3s ease;
 }
 
+.course1 {
+  min-width: 20em;
+  min-height: 20em;
+
+}
+
+.course2 {
+  min-width: 20em;
+  min-height: 20em;
+}
+
+
 .course:hover {
   transform: scale(1.1);
   cursor: pointer;
