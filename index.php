@@ -6,7 +6,6 @@
 
     include($path."assets/inc/nav.php");
 
-
 ?>
     <div class="index-header">
       <!-- Middle Content -->
@@ -39,21 +38,21 @@
         <div class="course-section">
             <h2 class="explore">Explore Our <br>Two Main Courses</h2>
 
-        <div class="course-collection">
-            <div class="course course1" style="background-image: url('<?php echo $path ?>assets/img/beginners-image.jpg');">
-              <div class="course-info">
-                <h2>Unix for Beginners</h2>
-                <p>Get started with Unix fundamentals and build a solid foundation.</p>
+          <div class="course-collection">
+              <div class="course course1" style="background-image: url('<?php echo $path ?>assets/img/beginners-image.jpg');">
+                <div class="course-info">
+                  <h2>Unix for Beginners</h2>
+                  <p>Get started with Unix fundamentals and build a solid foundation.</p>
+                </div>
+              </div>
+              
+              <div class="course course2" style="background-image: url('<?php echo $path ?>assets/img/advanced-unix.jpg');">
+                <div class="course-info">
+                  <h2>Advanced Unix</h2>
+                  <p>Dive deeper into Unix concepts and enhance your skills.</p>
+                </div>
               </div>
             </div>
-            
-            <div class="course course2" style="background-image: url('<?php echo $path ?>assets/img/advanced-unix.jpg');">
-              <div class="course-info">
-                <h2>Advanced Unix</h2>
-                <p>Dive deeper into Unix concepts and enhance your skills.</p>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="testimonial-section">

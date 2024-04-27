@@ -37,9 +37,9 @@
             <li class="dropdown">
               <a href="#" class="nav-link">More ˅</a>
               <ul class="submenu">
-                <li><a href="#">Exercises</a></li>
-                <li><a href="#">Quizzes</a></li>
-                <li><a href="#">Certifications</a></li>
+                <li><a href="<?php echo $path; ?>pages/exercises.php">Exercises</a></li>
+                <li><a href="<?php echo $path; ?>pages/quizzes.php">Quizzes</a></li>
+                <li><a href="<?php echo $path; ?>pages/certifications.php">Certifications</a></li>
                 <li><a href="<?php echo $path; ?>pages/about-us.php">About ABEEK</a></li>
                 <li><a href="<?php echo $path; ?>pages/contact-us.php">Contact Us</a></li>
               </ul>
