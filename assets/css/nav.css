@@ -1,0 +1,83 @@
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #23447e;
+  text-decoration: none;
+  font-weight: medium;
+  position: relative;
+}
+
+nav ul li.active a {
+  /* Styling for active navigation item */
+  color: #23447e; /* Change the text color */
+  border-bottom: 2px solid #23447e; /* Add an underline */
+}
+
+#nav-link::after {
+  content: "˅";
+  margin-left: 5px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  background-color: #6476a0;
+  z-index: 1;
+  min-width: 200px;
+  animation: fadeIn 0.3s ease-in-out;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li ul li {
+  display: block;
+  border-bottom: 1px solid #456376;
+}
+
+nav ul li ul li:last-child {
+  border-bottom: none;
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 14px;
+}
+
+nav ul li ul li a:hover {
+  background-color: #23447e;
+}
+
+/* Animation for dropdown */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
