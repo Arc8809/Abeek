@@ -7,6 +7,23 @@
     include($path."assets/inc/nav.php");
 
 ?>
+
+<script>
+  function search() {
+    // Get the search term entered by the user
+    var searchTerm = document.getElementById('searchInput').value;
+
+    // Encode the search term for passing it as a query parameter
+    var encodedSearchTerm = encodeURIComponent(searchTerm);
+
+    // Construct the search results page URL with the encoded search term
+    var searchResultsPageURL = 'pages/search_results.php?q=' + encodedSearchTerm;
+
+    // Open the search results page in a new tab/window
+    window.open(searchResultsPageURL, '_blank');
+}
+
+</script>
     <div class="index-header">
       <!-- Middle Content -->
       <div class="middle-header">
@@ -16,10 +33,13 @@
             destination for transforming<br> from a UNIX novice to a seasoned pro.
           </p>
           <button onclick="location.href='<?php echo $path ?>pages/intro-unix.php'">Start Learning Now</button>
-          <div class="search-container">
-            <input type="text" placeholder="What do you want to learn?" id="searchInput" />
-            <button>Search</button>
-          </div>
+          <form action="pages/search_results.php" method="get">
+              <div class="search-container">
+                  <input type="text" name="q" placeholder="What do you want to learn?" id="searchInput" />
+                  <button type="submit">Search</button>
+              </div>
+          </form>
+
         </div>
         <img
           src="<?php echo $path; ?>assets/img/1.png"

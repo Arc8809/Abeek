@@ -4,17 +4,19 @@
         <div class="logo">
           <img src="<?php echo $path; ?>assets/img/ABEEK_logo.webp" alt="ABEEK Logo" onclick="location.href='<?php echo $path ?>index.php'" />
         </div>
+        <button class="nav-toggle">&#9776;</button>
         <nav id="nav">
           <div>
           <ul>
             <li><a href="<?php echo $path; ?>index.php" id="home">Home</a></li>
             <li class="dropdown">
-              <a href="<?php echo $path; ?>pages/intro-unix.php" class="nav-link">UNIX Basics ˅</a>
+            <a <?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
+
               <ul class="submenu">
-                <li><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
-                <li><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
-                <li><a href="<?php echo $path; ?>pages/command-line">Command Line Basics</a></li>
-                <li><a href="<?php echo $path; ?>pages/file-management">File Management</a></li>
+                <li <?php if($title == "Intro to Unix"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
+                <li <?php if($title == "Unix File System"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
+                <li <?php if($title == "Command Line Basics"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/command-line">Command Line Basics</a></li>
+                <li <?php if($title == "File Management"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/file-management">File Management</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -48,3 +50,20 @@
         </nav>
         </div>
       </div>
+
+      <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const nav = document.getElementById("nav");
+      const navToggle = document.querySelector(".nav-toggle");
+
+      navToggle.addEventListener("click", function() {
+        nav.classList.toggle("show");
+      });
+
+      window.addEventListener("resize", function() {
+        if (window.innerWidth >= 790) {
+          nav.classList.remove("show");
+        }
+      });
+    });
+  </script>

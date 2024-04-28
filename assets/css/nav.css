@@ -25,7 +25,8 @@ nav ul li a {
 
 nav ul li.active a {
   /* Styling for active navigation item */
-  color: #23447e; /* Change the text color */
+  color: #fff; /* Change the text color */
+  font-weight: bold;
   border-bottom: 2px solid #23447e; /* Add an underline */
 }
 
@@ -70,6 +71,12 @@ nav ul li ul li a:hover {
   background-color: #23447e;
 }
 
+a.active {
+  color: #456376; /* Text color */
+  font-weight: bold; /* Make the text bold */
+  border-bottom: 2px solid #23447e; /* White line border */
+}
+
 /* Animation for dropdown */
 @keyframes fadeIn {
   from {
@@ -79,5 +86,67 @@ nav ul li ul li a:hover {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Add styles for hamburger menu */
+.nav-toggle {
+  display: none; /* Hide by default */
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 790px) {
+  .logo {
+    text-align: left;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 200px; /* Adjust width as needed */
+    height: 100vh; /* Adjust height as needed */
+    background-color: #6476a0; /* Adjust background color as needed */
+    transition: right 0.3s ease;
+  }
+
+  nav.show {
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    right: 30px;
+  }
+
+  nav ul {
+    display: block;
+    background-color: #6476a0;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    border-bottom: 1px solid #456376;
+  }
+
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li a:hover {
+    background-color: #23447e;
   }
 }
