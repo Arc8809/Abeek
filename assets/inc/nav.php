@@ -10,9 +10,9 @@
           <ul>
             <li><a href="<?php echo $path; ?>index.php" id="home">Home</a></li>
             <li class="dropdown">
-            <a <?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
+            <a onclick="show_dropdown('basics')"<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
 
-              <ul class="submenu">
+              <ul class="submenu" id="basics">
                 <li <?php if($title == "Intro to Unix"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
                 <li <?php if($title == "Unix File System"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
                 <li <?php if($title == "Command Line Basics"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/command-line">Command Line Basics</a></li>
@@ -20,8 +20,8 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link">Advanced UNIX ˅</a>
-              <ul class="submenu">
+              <a href="#" class="nav-link" onclick="show_dropdown('advanced')">Advanced UNIX ˅</a>
+              <ul class="submenu" id="advanced">
                 <li><a href="#">Shell scripting</a></li>
                 <li><a href="#">SED Regular Expressions</a></li>
                 <li><a href="#">System Logging</a></li>
@@ -29,16 +29,16 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link">Examples ˅</a>
-              <ul class="submenu">
+              <a href="#" class="nav-link" onclick="show_dropdown('examples')">Examples ˅</a>
+              <ul class="submenu" id="examples">
                 <li><a href="#">Code Snippets</a></li>
                 <li><a href="#">Interactive Examples</a></li>
               </ul>
             </li>
             <!-- Add other menu items here -->
-            <li class="dropdown">
-              <a href="#" class="nav-link">More ˅</a>
-              <ul class="submenu">
+            <li class="dropdown" >
+              <a href="#" class="nav-link" onclick="show_dropdown('more')">More ˅</a>
+              <ul class="submenu" id="more">
                 <li><a href="<?php echo $path; ?>pages/exercises.php">Exercises</a></li>
                 <li><a href="<?php echo $path; ?>pages/quizzes.php">Quizzes</a></li>
                 <li><a href="<?php echo $path; ?>pages/certifications.php">Certifications</a></li>
@@ -66,4 +66,18 @@
         }
       });
     });
+
+    function show_dropdown(id){
+      var content = document.getElementById(id);
+      if(content.style.display=== "block"){
+        content.style.display ="none";
+      }
+      else{
+        content.style.display ="block";
+      }
+    };
+
+
+
+
   </script>
