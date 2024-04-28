@@ -10,7 +10,7 @@
           <ul>
             <li><a href="<?php echo $path; ?>index.php" id="home">Home</a></li>
             <li class="dropdown">
-            <a onclick="show_dropdown('basics')"<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
+            <a class="nav-link" onclick="show_dropdown('basics')"<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
 
               <ul class="submenu" id="basics">
                 <li <?php if($title == "Intro to Unix"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
@@ -69,15 +69,35 @@
 
     function show_dropdown(id){
       var content = document.getElementById(id);
-      if(content.style.display=== "block"){
-        content.style.display ="none";
-      }
-      else{
-        content.style.display ="block";
+      var allDropdowns = document.querySelectorAll('.submenu');
+      
+      // Close all dropdowns
+      allDropdowns.forEach(function(dropdown) {
+        if (dropdown.id !== id && dropdown.style.display === "block") {
+          dropdown.style.display = "none";
+        }
+      });
+      
+      // Toggle the display if none, close it otherwise
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
       }
     };
 
-
-
+    
+  
+  // Check if the click is anywhere else besides the dropdown, if yes, then close all the dropdowns
+  document.addEventListener('click', function(event) {
+  // Check if the clicked element is not a dropdown toggle or its content
+  if (!event.target.matches('.nav-link')) {
+    // Close all dropdowns
+    var allDropdowns = document.querySelectorAll('.submenu');
+    allDropdowns.forEach(function(dropdown) {
+      dropdown.style.display = "none";
+     });
+    }
+  });
 
   </script>
