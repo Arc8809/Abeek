@@ -23,5 +23,7 @@
 }
 
 .page_text {
-    margin-top: 3em;
+    margin-top: 2em;
+    font-size: 0.9em;
+    line-height: 1.3em;
 }
