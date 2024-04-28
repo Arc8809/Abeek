@@ -63,3 +63,40 @@ footer {
 .scroll-to-top a:hover {
   color: #ccc;
 }
+
+/* Media query for screens less than 790px */
+@media screen and (max-width: 790px) {
+  .footer-section {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+  }
+
+  .logo-section img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer-section {
+    font-size: 10px;
+  }
+
+  .logo-section img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer-section {
+    flex-basis: 100%; /* Adjust the flex-basis value to control the width */
+    flex-grow: 0;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .footer-section:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .logo-section img {
+    width: 120px;
+  }
+}

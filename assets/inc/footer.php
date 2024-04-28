@@ -56,12 +56,24 @@
         </div>
         <div class="footer-section">
             <!-- Part 6: Scroll to Top and Mode Switch -->
+            <script>
+                function scrollToTop() {
+                    document.body.scrollTop = 0; // For Safari
+                    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+                }
+            </script>
             <div class="scroll-to-top">
                 <a href="#top"><i class="fas fa-arrow-up"></i></a>
                 <!-- Add mode switch icon here -->
             </div>
+            <!-- Add copyright notice and scroll to top button -->
+            <div class="footer-section">
+                <button onclick="scrollToTop()">↑</button>
+                <p>&copy; 2024 ABEEK Tutorials</p>
+            </div>
         </div>
     </div>
+    
 </footer>
 </body>
 </html>

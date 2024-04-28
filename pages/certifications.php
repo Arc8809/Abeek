@@ -1,5 +1,5 @@
 <?php 
-    $title = "Intro to Unix";
+    $title = "Certifications";
     $path = "../";
 
     include($path."assets/inc/header.php");
