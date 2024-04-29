@@ -20,7 +20,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="nav-link<?php if($title == "Shell Scripting" || $title == "SED Expressions" || $title == "System Logging" || $title == "Signals and Traps"){ echo ' active"';} ?>" onclick="show_dropdown('basics')" href="#">Advanced UNIX ˅</a>
+              <a class="nav-link<?php if($title == "Shell Scripting" || $title == "SED Expressions" || $title == "System Logging" || $title == "Signals and Traps"){ echo ' active"';} ?>" onclick="show_dropdown('advanced')" href="#">Advanced UNIX ˅</a>
               <ul class="submenu" id="advanced">
                 <li <?php if($title == "Shell Scripting"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/shell-scripting.php">Shell scripting</a></li>
                 <li <?php if($title == "SED Expressions"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/sed-expressions.php">SED Regular Expressions</a></li>
@@ -29,7 +29,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a class="nav-link<?php if($title == "Code Snippets" || $title == "Interactive Examples"){ echo ' active"';} ?>" onclick="show_dropdown('basics')" href="#">Examples ˅</a>
+              <a class="nav-link<?php if($title == "Code Snippets" || $title == "Interactive Examples"){ echo ' active"';} ?>" onclick="show_dropdown('examples')" href="#">Examples ˅</a>
               <ul class="submenu" id="examples">
                 <li <?php if($title == "Code Snippets"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/code-snippets.php">Code Snippets</a></li>
                 <li <?php if($title == "Interactive Examples"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/interactive-examples.php">Interactive Examples</a></li>
