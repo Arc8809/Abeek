@@ -20,7 +20,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link" onclick="show_dropdown('advanced')">Advanced UNIX ˅</a>
+              <a href="<?php echo $path; ?>" class="nav-link" onclick="show_dropdown('advanced')">Advanced UNIX ˅</a>
               <ul class="submenu" id="advanced">
                 <li <?php if($title == "Shell Scripting"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/shell-scripting.php">Shell scripting</a></li>
                 <li <?php if($title == "SED Expressions"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/sed-expressions.php">SED Regular Expressions</a></li>
