@@ -29,25 +29,25 @@ footer {
   left: 10px;
 }
 
-.submenu-section h3 {
+.footer-menu-section h3 {
   color: #fff;
 }
 
-.submenu {
+.footer-menu {
   list-style-type: none;
   padding: 0;
 }
 
-.submenu li {
+.footer-menu li {
   margin-bottom: 5px;
 }
 
-.submenu li a {
+.footer-menu li a {
   color: #fff;
   text-decoration: none;
 }
 
-.submenu li a:hover {
+.footer-menu li a:hover {
   color: #ccc;
 }
 

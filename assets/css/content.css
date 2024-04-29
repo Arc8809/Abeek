@@ -26,9 +26,10 @@
     margin-top: 2em;
     font-size: 0.9em;
     line-height: 1.3em;
+    font-size: 1.2em;
 }
 
-.terminal_example {
-    height: 25%;
-    width: 25%;
+h3 {
+    color:rgb(143, 143, 247);
+    font-size: larger;
 }
