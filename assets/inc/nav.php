@@ -10,7 +10,8 @@
           <ul>
             <li><a href="<?php echo $path; ?>index.php" id="home">Home</a></li>
             <li class="dropdown">
-            <a class="nav-link" onclick="show_dropdown('basics')"<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
+            <a class="nav-link<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo ' active"';} ?>" onclick="show_dropdown('basics')" href="#">UNIX Basics ˅</a>
+
               <ul class="submenu" id="basics">
                 <li <?php if($title == "Intro to Unix"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
                 <li <?php if($title == "Unix File System"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
@@ -19,7 +20,7 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link" onclick="show_dropdown('advanced')">Advanced UNIX ˅</a>
+              <a class="nav-link<?php if($title == "Shell Scripting" || $title == "SED Expressions" || $title == "System Logging" || $title == "Signals and Traps"){ echo ' active"';} ?>" onclick="show_dropdown('advanced')" href="#">Advanced UNIX ˅</a>
               <ul class="submenu" id="advanced">
                 <li <?php if($title == "Shell Scripting"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/shell-scripting.php">Shell scripting</a></li>
                 <li <?php if($title == "SED Expressions"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/sed-expressions.php">SED Regular Expressions</a></li>
@@ -28,10 +29,10 @@
               </ul>
             </li>
             <li class="dropdown">
-              <a href="#" class="nav-link" onclick="show_dropdown('examples')">Examples ˅</a>
+              <a class="nav-link<?php if($title == "Code Snippets" || $title == "Interactive Examples"){ echo ' active"';} ?>" onclick="show_dropdown('examples')" href="#">Examples ˅</a>
               <ul class="submenu" id="examples">
-                <li><a href="#">Code Snippets</a></li>
-                <li><a href="#">Interactive Examples</a></li>
+                <li <?php if($title == "Code Snippets"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/code-snippets.php">Code Snippets</a></li>
+                <li <?php if($title == "Interactive Examples"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/interactive-examples.php">Interactive Examples</a></li>
               </ul>
             </li>
             <!-- Add other menu items here -->
