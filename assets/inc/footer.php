@@ -25,10 +25,10 @@
                 <h3>Advanced UNIX</h3>
                 
                 <ul class="footer-menu">
-                    <li><a href="#">Shell scripting</a></li>
-                    <li><a href="#">Process management</a></li>
-                    <li><a href="#">Networking</a></li>
-                    <li><a href="#">System Administration</a></li>
+                    <li><a href="shell-scripting.php">Shell scripting</a></li>
+                    <li><a href="sed-expressions.php">SED Regular Expression</a></li>
+                    <li><a href="system-logging.php">System Logging</a></li>
+                    <li><a href="signals-traps.php">Signals & Traps</a></li>
 
                 </ul>
             </div>
@@ -38,8 +38,8 @@
             <div class="submenu-section">
                 <h3>Examples</h3>
                 <ul class="footer-menu">
-                    <li><a href="#">Code Snippets</a></li>
-                    <li><a href="#">Interactive Examples</a></li>
+                    <li><a href="pages/code-snippets.php">Code Snippets</a></li>
+                    <li><a href="pages/interactive-examples.php">Interactive Examples</a></li>
                 </ul>
             </div>
         </div>
