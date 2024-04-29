@@ -11,7 +11,7 @@
             <!-- Part 2: UNIX Basics -->
             <div class="submenu-section">
                 <h3>UNIX Basics</h3>
-                <ul class="submenu">
+                <ul class="footer-menu">
                     <li><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
                     <li><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
                     <li><a href="<?php echo $path; ?>pages/command-line">Command Line Basics</a></li>
@@ -23,7 +23,7 @@
             <!-- Part 3: Advanced UNIX -->
             <div class="submenu-section">
                 <h3>Advanced UNIX</h3>
-                <ul class="submenu">
+                <ul class="footer-menu">
                     <li><a href="#">Shell scripting</a></li>
                     <li><a href="#">Process management</a></li>
                     <li><a href="#">Networking</a></li>
@@ -35,7 +35,7 @@
             <!-- Part 4: Examples -->
             <div class="submenu-section">
                 <h3>Examples</h3>
-                <ul class="submenu">
+                <ul class="footer-menu">
                     <li><a href="#">Code Snippets</a></li>
                     <li><a href="#">Interactive Examples</a></li>
                 </ul>
@@ -45,7 +45,7 @@
             <!-- Part 5: More -->
             <div class="submenu-section">
                 <h3>More</h3>
-                <ul class="submenu">
+                <ul class="footer-menu">
                     <li><a href="<?php echo $path; ?>pages/exercises.php">Exercises</a></li>
                     <li><a href="<?php echo $path; ?>pages/quizzes.php">Quizzes</a></li>
                     <li><a href="<?php echo $path; ?>pages/certifications.php">Certifications</a></li>
