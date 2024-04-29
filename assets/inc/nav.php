@@ -44,6 +44,7 @@
                 <li><a href="<?php echo $path; ?>pages/certifications.php">Certifications</a></li>
                 <li><a href="<?php echo $path; ?>pages/about-us.php">About ABEEK</a></li>
                 <li><a href="<?php echo $path; ?>pages/contact-us.php">Contact Us</a></li>
+                <li><a href="<?php echo $path; ?>pages/grading.php">Grading</a></li>
               </ul>
             </li>
           </ul>

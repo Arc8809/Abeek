@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/shell-scripting.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/interactive-examples.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/exercises.css" />
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/grading.css" />
 
 
 
