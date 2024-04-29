@@ -11,7 +11,7 @@
 <main class="content_body">
 <div>
     <h1>ERROR 404 PAGE NOT FOUND</h1>
-    <p>Due to to much and ambition and not enough time this page is non-existent</p>   
+    <p>Due to too much and ambition and not enough time this page is non-existent</p>   
 </div>  
 </main>
 
