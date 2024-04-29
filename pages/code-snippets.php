@@ -31,9 +31,25 @@
 
     <h2>Terminal Commands Examples</h2>
 
+     <div class="block">
+            <div class="command">
+                <p>$ mkdir example</p>
+            </div>
+        </div> 
     <img src="<?php echo $path; ?>assets/images/mkdir.png" id="mkdir_terminal" class="terminal_example">
 
+    <div class="block">
+            <div class="command">
+                <p>$ cd example</p>
+            </div>
+        </div> 
     <img src="<?php echo $path; ?>assets/images/cd.png" id="cd_terminal" class="terminal_example">
+
+    <div class="block">
+            <div class="command">
+                <p>$ pwd example</p>
+            </div>
+        </div> 
 
     <img src="<?php echo $path; ?>assets/images/pwd.png" id="directory_terminal" class="terminal_example">
 
