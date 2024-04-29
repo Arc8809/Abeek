@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/quizzes.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/content.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/shell-scripting.css" />
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/interactive-examples.css" />
 
 
     <?php
