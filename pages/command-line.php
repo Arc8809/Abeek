@@ -25,6 +25,8 @@
             </div>
         </div> 
 
+        <img src="assets/images/mkdir.png" id="mkdir_terminal" class="terminal_example">
+
 
         <div class="page_text">
             <p>The mkdir command takes in a parameter and creates a directory with the name of the given parameter. In the 
@@ -42,6 +44,8 @@
             </div>
         </div> 
 
+        <img src="assets/images/cd.png" id="cd_terminal" class="terminal_example">
+
 
         <div class="page_text">
             <p>The cd command takes in a parameter and changes the current directory to the given parameter provided
@@ -55,6 +59,8 @@
                 <p>$ cd /home/student/example</p>
             </div>
         </div> 
+
+        <img src="assets/images/pwd.png" id="directory_terminal" class="terminal_example">
 
         <div class="page_text">
             <p>In the example above, we change directory to the example student directory that is on the path "/home/student".
