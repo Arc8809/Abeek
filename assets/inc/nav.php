@@ -11,7 +11,6 @@
             <li><a href="<?php echo $path; ?>index.php" id="home">Home</a></li>
             <li class="dropdown">
             <a class="nav-link" onclick="show_dropdown('basics')"<?php if($title == "Intro to Unix" || $title == "Unix File System" || $title == "Command Line Basics" || $title == "File Management"){ echo 'class="active"';} ?> href="#">UNIX Basics ˅</a>
-
               <ul class="submenu" id="basics">
                 <li <?php if($title == "Intro to Unix"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/intro-unix.php">Intro to Unix</a></li>
                 <li <?php if($title == "Unix File System"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/unix-file-systems">Unix File System</a></li>
