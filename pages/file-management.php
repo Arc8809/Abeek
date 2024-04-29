@@ -19,7 +19,7 @@
         </div>
 
         <div>
-            <p>Every file in Unix consists of properties such as file type, file permissions, ownership, and other extensive properties
+            <p>Every file in Unix consists of properties such as file type, file permissions, ownership, and other extensive properties.
                 For now, we will look into file permissions.
             </p>
 
@@ -42,25 +42,49 @@
         </div>
 
         <div class="page_text">
-            <p>The mkdir command takes in a parameter and creates a directory with the name of the given parameter. In the 
-                    example provided above, a directory with the name "example" is created. This directory will be created on the relative
-                    path to your current location on the system. To specify the creation of a directory at an absolute path, you can 
-                    provide an absolute path instead, for example, "mkdir /home/student/example" creates the example directory on 
-                    the path "/home/student".
+            <p>File permissions are represented by a string of characters in Unix systems such as: - rwxrwxrwx
             </p>
         </div>
 
-        
+        <div class="page_text">
+            <p>This example shows a file that has read, write, and execute permissions for owner, group, and other users. The first set of “rwx” commands are for owner permissions, followed by group permissions for the second set, and other permissions for the last set.
+            </p>
+        </div>
 
 
-File permissions are represented by a string of characters in Unix systems such as:
-- rwxrwxrwx
+        <div class="page_text">
+            <p>Missing permissions would be denoted by a dash (-). A file lacking any permissions for 
+                groups and other users would be denoted by - rwx—-----. Permissions can be represented using numeric values too.
+            </p>
+            <p>The numeric values for permissions is as follows: </p>
+            <ul>
+                <li>Read permission (r) is represented by the value 4.</li>
+                <li>Write permission (w) is represented by the value 2.</li>
+                <li>Execute permission (x) is represented by the value 1.</li>
+                <li>No permission is represented by the value 0.</li>
+            </ul>
+            <p>A 3 digit number would represent the permissions for owner, group, and other users, with each digit 
+                representing a full set of permissions. In this manner, the number “777”, would be equivalent to  
+                [ - rwxrwxrwx ]. In a similar manner, 700 would be equivalent to  [ - rwx—----- ]. 
+            </p>
+        </div>
 
-This example shows a file that has read, write, and execute permissions for owner, group, and other users.
+        <div class="page_text">
+            <p>Let's take a look at the commands that will allow us to modify file permissions.
+            </p>
+        </div>
 
-The first set of “rwx” commands are for owner permissions, followed by group permissions for the second set, and other permissions for the last set.
-
-
+        <h3>chmod command</h3>
+        <div class="block">
+            <div class="command">
+                <p>$ chmod 777 example.txt</p>
+            </div>
+        </div> 
+        <div class="page_text">
+            <p>In the example provided above, we change the permissions of example.txt to have read, write, and 
+                execute availability to the owner, group holders, and any other users who may come across the file. 
+            </p>
+        </div>
 
 
         <div class="page_text">
@@ -85,6 +109,48 @@ The first set of “rwx” commands are for owner permissions, followed by group
         <div class="page_text">
             <p>ls is a simple command that lists all the files in the current working directory. When provided an argument, 
                 for an absolute or relative path, it will then list the files at that provided path.  
+            </p>
+        </div>
+
+        <div class="page_text">
+            <p>Terminal commands allow us to do all sorts of neat tricks with files. How about reading the contents of files?
+            </p>
+        </div>
+
+        <h3>cat command</h3>
+        <div class="block">
+            <div class="command">
+                <p>$ cat example.txt</p>
+            </div>
+        </div> 
+
+        <div class="page_text">
+            <p>The cat command displays the contents of the specified file, in the example above, it will display 
+                the file contents of example.txt.
+            </p>
+        </div>
+
+        <h3>head command</h3>
+        <div class="block">
+            <div class="command">
+                <p>$ head example.txt</p>
+            </div>
+        </div> 
+
+        <div class="page_text">
+            <p>The head command will display the first ten lines of a specified file.
+            </p>
+        </div>
+
+        <h3>tail command</h3>
+        <div class="block">
+            <div class="command">
+                <p>$ tail example.txt</p>
+            </div>
+        </div> 
+
+        <div class="page_text">
+            <p>The head command will display the last ten lines of a specified file.
             </p>
         </div>
 
