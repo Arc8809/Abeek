@@ -25,7 +25,7 @@
             </div>
         </div> 
 
-        <img src="assets/images/mkdir.png" id="mkdir_terminal" class="terminal_example">
+        <img src="<?php echo $path; ?>assets/images/mkdir.png" id="mkdir_terminal" class="terminal_example">
 
 
         <div class="page_text">
@@ -44,7 +44,7 @@
             </div>
         </div> 
 
-        <img src="assets/images/cd.png" id="cd_terminal" class="terminal_example">
+        <img src="<?php echo $path; ?>assets/images/cd.png" id="cd_terminal" class="terminal_example">
 
 
         <div class="page_text">
@@ -60,7 +60,7 @@
             </div>
         </div> 
 
-        <img src="assets/images/pwd.png" id="directory_terminal" class="terminal_example">
+        <img src="<?php echo $path; ?>assets/images/pwd.png" id="directory_terminal" class="terminal_example">
 
         <div class="page_text">
             <p>In the example above, we change directory to the example student directory that is on the path "/home/student".

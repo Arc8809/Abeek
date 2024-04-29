@@ -24,10 +24,10 @@
             <div class="submenu-section">
                 <h3>Advanced UNIX</h3>
                 <ul class="submenu">
-                    <li><a href="#">Shell scripting</a></li>
-                    <li><a href="#">Process management</a></li>
-                    <li><a href="#">Networking</a></li>
-                    <li><a href="#">System Administration</a></li>
+                    <li><a href="<?php echo $path; ?>pages/shell-scripting.php">Shell scripting</a></li>
+                    <li><a href="<?php echo $path; ?>pages/sed-expressions.php">SED Regular Expressions</a></li>
+                    <li><a href="<?php echo $path; ?>pages/system-logging.php">System Logging</a></li>
+                    <li><a href="<?php echo $path; ?>pages/signals-traps.php">Signals & Traps</a></li>
                 </ul>
             </div>
         </div>

@@ -22,10 +22,10 @@
             <li class="dropdown">
               <a href="#" class="nav-link" onclick="show_dropdown('advanced')">Advanced UNIX ˅</a>
               <ul class="submenu" id="advanced">
-                <li><a href="#">Shell scripting</a></li>
-                <li><a href="#">SED Regular Expressions</a></li>
-                <li><a href="#">System Logging</a></li>
-                <li><a href="#">Signals & Traps</a></li>
+                <li <?php if($title == "Shell Scripting"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/shell-scripting.php">Shell scripting</a></li>
+                <li <?php if($title == "SED Expressions"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/sed-expressions.php">SED Regular Expressions</a></li>
+                <li <?php if($title == "System Logging"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/system-logging.php">System Logging</a></li>
+                <li <?php if($title == "Signals and Traps"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/signals-traps.php">Signals & Traps</a></li>
               </ul>
             </li>
             <li class="dropdown">
