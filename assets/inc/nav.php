@@ -30,8 +30,8 @@
             <li class="dropdown">
               <a href="#" class="nav-link" onclick="show_dropdown('examples')">Examples ˅</a>
               <ul class="submenu" id="examples">
-                <li><a href="#">Code Snippets</a></li>
-                <li><a href="#">Interactive Examples</a></li>
+                <li><?php if($title == "Code Snippets"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/code-snippets.php">Code Snippets</a></li>
+                <li><?php if($title == "Interactive Examples"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/interactive-examples.php">Interactive Examples</a></li>
               </ul>
             </li>
             <!-- Add other menu items here -->
