@@ -27,3 +27,8 @@
     font-size: 0.9em;
     line-height: 1.3em;
 }
+
+.terminal_example {
+    height: 25%;
+    width: 25%;
+}
