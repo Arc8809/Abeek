@@ -1,0 +1,17 @@
+.exercise-questions .question {
+  margin-bottom: 20px;
+  border: 1px solid #ccc; /* Add border */
+  padding: 15px; /* Add padding */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  background-color: #f9f9f9; /* Add background color */
+}
+
+.exercise-questions p {
+  color: #23447e;
+  margin-bottom: 10px; /* Add some bottom margin to the paragraph */
+}
+
+.choice {
+  margin-right: 10px;
+  /* Add additional styles as needed */
+}

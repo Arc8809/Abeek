@@ -31,13 +31,11 @@
             <li class="dropdown">
               <a class="nav-link<?php if($title == "Code Snippets" || $title == "Interactive Examples"){ echo ' active"';} ?>" onclick="show_dropdown('basics')" href="#">Examples ˅</a>
               <ul class="submenu" id="examples">
-<<<<<<< HEAD
+
                 <li <?php if($title == "Code Snippets"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/code-snippets.php">Code Snippets</a></li>
                 <li <?php if($title == "Interactive Examples"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/interactive-examples.php">Interactive Examples</a></li>
-=======
                 <li><?php if($title == "Code Snippets"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/code-snippets.php">Code Snippets</a></li>
                 <li><?php if($title == "Interactive Examples"){ echo 'class="active"';} ?>><a href="<?php echo $path; ?>pages/interactive-examples.php">Interactive Examples</a></li>
->>>>>>> d80db14d55506466862b143c94c7edc8dc6dddfc
               </ul>
             </li>
             <!-- Add other menu items here -->

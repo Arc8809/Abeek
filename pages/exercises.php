@@ -1,48 +1,94 @@
 <?php 
-    $title = "Exercises";
+    $title = "Quizzes";
     $path = "../";
 
     include($path."assets/inc/header.php");
-
     include($path."assets/inc/nav.php");
 
-?>
-<main class="content_body">
-     
-     <div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br>
-     <div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br><div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br><div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br>
-     <div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br><div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br><div>
-         TESTTT!!!!!!
-         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam adipisci ipsa exercitationem iure. Laboriosam reprehenderit commodi amet, mollitia id vitae est debitis earum sint aut doloremque sapiente aliquid. Nam, et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quaerat mollitia ut consequatur quos atque doloremque alias assumenda, totam, veniam perspiciatis hic velit quasi, accusamus repudiandae itaque magnam fugit molestias.
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio, iure vel omnis minima consectetur totam velit quisquam, id reiciendis dignissimos nobis et sequi minus sint tempora laboriosam nemo possimus quos?
-     </div><br>
- </main>
- 
+    // Setting up our QUESTIONS from database
+    $sql_questions = "SELECT * FROM `240quiz_questions`";
 
-<?php 
+    // Get result
+    $result = $conn->query($sql_questions) or die($conn->error.__LINE__);
+
+    if ($result->num_rows > 0) {
+
+        // Initialize score
+        $score = 0;
+
+?>
+<div class="quiz-container">
+    <h2>Welcome to the Unix Systems Tutorial Exercises!</h2>
+    <p>This exercise consists of multiple-choice questions related to Unix systems. Let's get started!</p>
+    <form action="#" method="post" id="quiz-form">
+        <?php
+        // Loop through each question and display it
+        while ($question = $result->fetch_assoc()) {
+        ?>
+            <div class="question" id="<?php echo $question['question_number']; ?>">
+                <p><?php echo $question['text']; ?></p>
+                <?php
+                    // Assuming you have choices stored in another table
+                    // You need to replace '240quiz_choices' with the actual table name for choices
+                    $sql_choices = "SELECT * FROM `240quiz_choices` WHERE question_number = {$question['question_number']}";
+                    $choices_result = $conn->query($sql_choices) or die($conn->error.__LINE__);
+                    // Loop through each choice and display it as a radio button
+                    while ($choice = $choices_result->fetch_assoc()) {
+                ?>
+                        <input type="radio" id="<?php echo $choice['id']; ?>" name="question_<?php echo $question['question_number']; ?>" value="<?php echo $choice['id']; ?>" class="choice" <?php if ($choice['is_correct'] == 1) echo 'correct="1"'; else echo 'correct="0"'; ?>>
+                        <label for="<?php echo $choice['id']; ?>"><?php echo $choice['text']; ?></label><br>
+                <?php
+                    }
+                ?>
+            </div>
+        <?php
+        }
+        ?>
+        <input type="submit" value="Submit" id="submit-btn">
+    </form>
+    <button onclick="resetQuiz()" id="try-again-btn" style="display: none;">Try Again</button>
+    <p>Your Score: <span id="score">0</span>/<?php echo $result->num_rows; ?></p>
+    
+</div>
+
+<script>
+    document.getElementById('quiz-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get all radio buttons with class 'choice'
+        var choices = document.querySelectorAll('.choice');
+        
+        // Loop through each choice
+        choices.forEach(function(choice) {
+            var label = choice.nextElementSibling; // Get the label next to the choice
+            var questionNumber = choice.getAttribute('name').split('_')[1]; // Extract question number from choice name attribute
+            var selected = choice.checked; // Check if the choice is selected
+            
+            // Check if the choice is correct or incorrect based on the 'correct' attribute added to the choice input
+            if (selected && choice.getAttribute('correct') === '1') {
+                label.classList.add('correct'); // Add 'correct' class to label
+            } else if (selected && choice.getAttribute('correct') === '0') {
+                label.classList.add('incorrect'); // Add 'incorrect' class to label
+            }
+        });
+        
+        // Calculate and display score
+        var score = document.querySelectorAll('.correct').length;
+        document.getElementById('score').textContent = score;
+        
+        // Show the "Try Again" button
+        document.getElementById('try-again-btn').style.display = 'inline-block';
+    });
+
+    function resetQuiz() {
+        location.reload(); // Reload the page to reset the quiz
+    }
+</script>
+
+<?php
+    } else {
+        echo "No questions found.";
+    }
+
     include($path."assets/inc/footer.php");
 ?>

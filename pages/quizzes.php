@@ -12,12 +12,15 @@
     $result = $conn->query($sql_questions) or die($conn->error.__LINE__);
 
     if ($result->num_rows > 0) {
-
-        // Initialize score
-        $score = 0;
-
 ?>
-<div class="quiz-container">
+
+<div class="quiz-introduction">
+    <h2>Welcome to the Unix Systems Tutorial Quiz!</h2>
+    <p>This quiz consists of 10 questions related to Unix systems. Are you ready to start?</p>
+    <button onclick="startQuiz()">Start Quiz</button>
+</div>
+
+<div class="quiz-container" style="display: none;">
     <h2>Quiz Time!</h2>
     <form action="#" method="post" id="quiz-form">
         <?php
@@ -47,10 +50,14 @@
     </form>
     <button onclick="resetQuiz()" id="try-again-btn" style="display: none;">Try Again</button>
     <p>Your Score: <span id="score">0</span>/<?php echo $result->num_rows; ?></p>
-    
 </div>
 
 <script>
+    function startQuiz() {
+        document.querySelector('.quiz-introduction').style.display = 'none';
+        document.querySelector('.quiz-container').style.display = 'block';
+    }
+
     document.getElementById('quiz-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent form submission
         

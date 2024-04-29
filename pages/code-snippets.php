@@ -59,7 +59,7 @@ ps aux
 
 </main>
 
-=======
+
 <main class="content_body">
     <div>
         <div>
@@ -211,7 +211,6 @@ ps aux
     </div>
  </main>
  
->>>>>>> d80db14d55506466862b143c94c7edc8dc6dddfc
 <?php 
     include($path."assets/inc/footer.php");
 ?>

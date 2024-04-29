@@ -1,3 +1,32 @@
+.quiz-introduction {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quiz-introduction h2 {
+  color: #456376;
+  font-size: 24px;
+}
+
+.quiz-introduction p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.quiz-introduction button {
+  background-color: #456376;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quiz-introduction button:hover {
+  background-color: #23447e;
+}
+
 .quiz-container {
   max-width: 600px;
   margin: 0 auto;
