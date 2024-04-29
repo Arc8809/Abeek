@@ -88,6 +88,27 @@
 
 
         <div class="page_text">
+            <p>Let's look at the command that will help us keep track of our location on the system.
+            </p>
+        </div>
+
+
+        <h3>pwd command</h3>
+        <div class="block">
+            <div class="command">
+                <p>$ pwd</p>
+            </div>
+        </div>
+
+
+        <div class="page_text">
+            <p>pwd will return the current directory of your location. If you are in "/home/student", then it will return 
+                "home/student."
+            </p>
+        </div>
+
+
+        <div class="page_text">
             <p>Let's look at basic command that will help us keep track of the files in our directories.
             </p>
         </div>
