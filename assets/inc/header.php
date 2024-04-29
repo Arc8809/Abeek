@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/contact-us.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/quizzes.css" />
     <link rel="stylesheet" href="<?php echo $path; ?>assets/css/content.css" />
+    <link rel="stylesheet" href="<?php echo $path; ?>assets/css/shell-scripting.css" />
 
 
     <?php

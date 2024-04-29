@@ -1,0 +1,28 @@
+
+
+.content_body h1 {
+  color: #333;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.content_body p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.content_body code {
+  font-family: Consolas, monospace;
+  background-color: #f7f7f7;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+
+.content_body ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.content_body ul li {
+  margin-bottom: 5px;
+}

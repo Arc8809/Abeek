@@ -23,11 +23,13 @@
             <!-- Part 3: Advanced UNIX -->
             <div class="submenu-section">
                 <h3>Advanced UNIX</h3>
+                
                 <ul class="footer-menu">
                     <li><a href="#">Shell scripting</a></li>
                     <li><a href="#">Process management</a></li>
                     <li><a href="#">Networking</a></li>
                     <li><a href="#">System Administration</a></li>
+
                 </ul>
             </div>
         </div>
