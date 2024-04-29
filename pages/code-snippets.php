@@ -29,6 +29,14 @@
         <!-- Add more commands and descriptions as needed -->
     </ul>
 
+    <h2>Terminal Commands Examples</h2>
+
+    <img src="<?php echo $path; ?>assets/images/mkdir.png" id="mkdir_terminal" class="terminal_example">
+
+    <img src="<?php echo $path; ?>assets/images/cd.png" id="cd_terminal" class="terminal_example">
+
+    <img src="<?php echo $path; ?>assets/images/pwd.png" id="directory_terminal" class="terminal_example">
+
     <h2>Shell Scripting</h2>
     <p>Here are some examples of shell scripts:</p>
     
